@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Farmstead | Your future agriculture</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/img3.png"
+      type="image/x-icon"
+    />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -9,34 +14,195 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Volkhov:wght@400;700&display=swap"
       rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Slick Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- LightGallery -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lightgallery-bundle.min.css"
+      integrity="sha512-91yJwfiGTCo9TM74ZzlAIAN4Eh5EWHpQJUfvo/XhpH6lzQtiRFkFRW1W+JSg4ch4XW3/xzh+dY4TOw/ILpavQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    
   </head>
-
-  <body>
-    <header>
-      <!-- place navbar here -->
+  <body id="body">
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <a class="header__logo-link text-capitalize" href="#">
+            <i class="fa-solid fa-leaf"></i> Farmstead
+          </a>
+          <div class="header-menu d-flex align-items-center position-relative">
+            <form
+              id="header-form-group"
+              class="form-group position-relative"
+              action="/"
+              method="GET"
+            >
+              <input id="search" type="search" />
+              <i
+                class="search-icon fa-solid fa-magnifying-glass position-absolute"
+              ></i>
+            </form>
+            <i id="toggle-theme" class="fa-solid fa-moon"></i>
+            <i id="toggle-menu" class="fa-solid fa-bars"></i>
+            <nav id="header-nav" class="position-absolute">
+              <ul
+                class="header-nav-list d-flex flex-column text-center text-uppercase"
+              >
+                <li>
+                  <a class="header-nav-link header-nav-link--active" href="#"
+                    >HOME</a
+                  >
+                </li>
+                <li><a class="header-nav-link" href="#">ABOUT</a></li>
+                <li><a class="header-nav-link" href="#">SERVICES</a></li>
+                <li><a class="header-nav-link" href="#">BLOG POSTS</a></li>
+                <li><a class="header-nav-link" href="#">LANDING PAGE</a></li>
+                <li><a class="header-nav-link" href="#">ELEMENTS PAGE</a></li>
+                <li><a class="header-nav-link" href="#">404 PAGE</a></li>
+                <li><a class="header-nav-link" href="#">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
-    <main></main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+
+    <!-- Carousel Section -->
+    <section id="carousel" class="position-relative">
+      <div class="section-headings position-absolute">
+        <h1 class="primary-heading">
+          Welcome to Farmstead<br />
+          where Natural Food is born!
+        </h1>
+        <p class="text-heading">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium.
+        </p>
+        <a href="#" class="btn-custom">LEARN MORE</a>
+      </div>
+      <div class="slider">
+        <div class="slider-item slider-item--1 position-relative">
+          <div class="slider-footer position-absolute text-center">
+            <p class="slider-footer__number"><span>01</span>/03</p>
+            <p class="slider-footer__title text-capitalize">Agriculture</p>
+          </div>
+        </div>
+        <div class="slider-item slider-item--2 position-relative">
+          <div class="slider-footer position-absolute text-center">
+            <p class="slider-footer__number"><span>02</span>/03</p>
+            <p class="slider-footer__title text-capitalize">Farm Field</p>
+          </div>
+        </div>
+        <div class="slider-item slider-item--3 position-relative">
+          <div class="slider-footer position-absolute text-center">
+            <p class="slider-footer__number"><span>03</span>/03</p>
+            <p class="slider-footer__title text-capitalize">Organic Farm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
 
+    <!-- Slick Carousel -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
+
+    <!-- LightGallery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/lightgallery.min.js"
+      integrity="sha512-76iVPLEHY5kfZFCmHBQHLkcE4I2r+gK/I/HLYcm3iCuRO/hopAtyO3AFPCZy5B4347wQ7NftStUBVk/cR21MSw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/plugins/thumbnail/lg-thumbnail.umd.min.js"
+      integrity="sha512-k0frmdLGJwy4TgST+EQdWd/RSG38k7/XZmYHhy0246xTOCJnto6KEZGyh7GnGgiU7CKECV9t7RX/CHWKxM6bzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/plugins/zoom/lg-zoom.umd.min.js"
+      integrity="sha512-sUhyULf75y+uI1rJe7qF/rDQLesVkJK6ur2/cE0dD30n4NXSms/RqvtzOkItf9D5Wo7zm0gYRLUp4w5k8zhMKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Back to top -->
+    <script src="assets/vendors/back-to-top/main.js"></script>
+    <script src="assets/vendors/back-to-top/util.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/scripts/main.js"></script>
   </body>
 </html>
