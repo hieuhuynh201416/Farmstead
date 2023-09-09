@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* WORK */
+h5.small-title {
+  color: #fb811e;
+  font-size: 22px;
+  font-family: "Volkhov", serif;
+}
+
+.title-style {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #060606;
+  font-family: "Volkhov", serif;
+}
+
+.text-para {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 27px;
+  color: #707070;
+}
+
+.btn-style {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  font-weight: 600;
+  background: #fb811e;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+
+.btn-style:hover {
+  background: #009f4d !important;
+  color: white !important;
+}
+
+.w3l-features .call-grids-w3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.w3l-features .box-wrap {
+  padding: 40px 30px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
+  background-color: #fff;
+}
+
+.w3l-features .box-wrap:hover {
+  transition: 0.3s;
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+
+.w3l-features .box-wrap img {
+  max-width: 65px;
+  display: block;
+  margin: 0 auto;
+}
+
+.w3l-features .box-wrap h4 a {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 25px;
+  display: block;
+  color: #060606;
+  text-decoration: none;
+  font-family: "Volkhov", serif;
+  transition: all 0.5s;
+}
+
+.w3l-features .box-wrap h4 a:hover {
+  color: #009f4d;
+}
