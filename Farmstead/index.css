@@ -21,7 +21,7 @@
   width: 80%;
   padding: 20px;
 }
-h4 {
+.services h4 {
   position: absolute;
   color: white;
   font-weight: bold;
@@ -79,7 +79,7 @@ h4 {
   font-size: 14px;
   font-weight: bolder;
   color: white;
-  bottom: -75px;
+  bottom: -60px;
   left: 25px;
   color: #009f4d;
   border-radius: 14px;
