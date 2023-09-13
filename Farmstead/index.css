@@ -7,10 +7,6 @@
 @media (min-width: 1280px) .container {
   max-width: 1200px;
 }
-.container {
-  margin: 0 auto;
-  width: 95%;
-}
 
 /* WORK */
 h5.small-title {
@@ -185,4 +181,109 @@ h5.small-title {
 .pic__body {
   padding-top: 70px;
   margin-left: 25px;
+}
+
+/* FOOTER */
+.footer-end a.logo {
+  font-size: 32px;
+  color: #fb811e;
+  position: relative;
+  font-family: 'Volkhov', serif;
+  transition: all 0.3s;
+}
+
+.footer-end a.logo:hover {
+  color: black;
+}
+
+.footer-end a.logo i {
+  position: absolute;
+  top: -10px;
+  left: 55px;
+  font-size: 20px;
+
+}
+
+.footer-end p.copy-text a:hover {
+  color: #fb811e;
+}
+
+.footer-end p.copy-text a {
+  color: #009f4d;
+  transition: all 0.3s;
+}
+
+.footer-end .footer-end-main h3 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+}
+
+.footer-end .column-2 p {
+  line-height: 24px;
+}
+
+.footer-p a {
+  color: #707070;
+  text-decoration: none;
+  background-color: transparent;
+
+}
+
+.footer-end .subscribe input {
+  background: #f4f4f4;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  outline: none;
+  width: 80%;
+  color: #707070;
+  border: 1px solid #eee;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.footer-end .subscribe button {
+  background: #009f4d;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 12px 12px;
+  cursor: pointer;
+  width: 20%;
+  color: #fff;
+  border-radius: 0px 30px 30px 0px;
+  transition: all 0.3s;
+}
+
+.footer-end .subscribe button:hover {
+  opacity: .8;
+}
+.footer-end ul.social li{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.footer-end ul.social a {
+  color: #009f4d;
+  width: 35px;
+  height: 35px;
+  background: rgb(10 191 83 / 8%);
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.footer-end ul.social a:hover {
+  color: #fb811e;
+  background: rgb(255 201 69 / 19%);
+  box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
+
+.footer-end ul.social i {
+  font-size: 15px;
+  line-height: 35px;
 }
