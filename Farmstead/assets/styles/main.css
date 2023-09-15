@@ -144,14 +144,6 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: var(--bg-dark);
 }
 
-.theme-dark .primary-heading,
-.theme-dark .secondary-heading,
-.theme-dark .works-item__title > a,
-.theme-dark .services-item__title > a,
-.theme-dark .features-info__title,
-.theme-dark .features-item__title,
-.theme-dark .footer-contact__title,
-.theme-dark .footer-medias__title,
 .theme-dark .header-nav-list .header-nav-link,
 .theme-dark #header.header--sticky #toggle-theme,
 .theme-dark #header.header--sticky #toggle-menu,
