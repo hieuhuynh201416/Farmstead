@@ -1430,3 +1430,56 @@ h5.small-title {
     left: 50%;
     transform: translateX(-50%);
   }
+  /* Start Testimonials */
+ .testimonials-row .item {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  text-align: center;
+ }
+ .testimonials-row .item .testi-des  a{
+width: 90px;
+height: 90px;
+display: inline-block;
+overflow: hidden;
+border-radius: 50%;
+
+ }
+ .testimonials-row .item .testi-img img {
+width: 100%;
+min-height: 100%;
+object-fit: cover;
+object-position: center;
+
+ }
+ .testimonials-row .item .testi-des h3,
+ .testimonials-row .item .testi-des p {
+ color: white;
+ padding: 5px;
+  
+   }
+.testimonials-row .item span {
+  font-size: 22px;
+  color: #fb811e;
+  font-weight: 600;
+}
+   q {
+    font-size: 22px;
+    line-height: 34px;
+    color: white;
+    text-indent: 30px;
+    display: block;
+   }
+/* Chỉnh màu dot */
+.slick-dots {
+  bottom: -110px;
+}
+.slick-dots li.slick-active button:before {
+    color: #fb811e;
+}
+.slick-dots li button:before {
+  color: white;
+  font-size: 15px;
+  opacity: 1;
+}

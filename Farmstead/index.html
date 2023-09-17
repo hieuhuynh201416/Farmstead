@@ -75,6 +75,18 @@
       href="//fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&amp;display=swap"
       rel="stylesheet"
     />
+     <!-- Slick Testimonials -->
+     <link
+     rel="stylesheet"
+     type="text/css"
+     href="./slick-1.8.1/slick/slick.css"
+   />
+   <link
+     rel="stylesheet"
+     type="text/css"
+     href="./slick-1.8.1/slick/slick-theme.css"
+   />
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/styles/index.css" />
     <!-- My CSS -->
@@ -593,6 +605,80 @@
         </div>
       </div>
     </section>
+    <section class="w31-clients-1 py-5" id="testimonials">
+      <div class="cusrtomer-layout py-lg-5">
+        <div class="container py-md-5 py-4 HomePageTestimonials">
+          <div class="testimonials-row">
+            <div class="item">
+              <div class="col-md-3 testi-des">
+                <a href="#url" class="testi-img">
+                  <img src="./assets/images/testi1.jpg" alt="" />
+                </a>
+                <h3>Dennis Wilson</h3>
+                <p>Customer</p>
+              </div>
+              <div
+                class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left text-center"
+              >
+                <span class="fa fa-quote-left"></span>
+                <blockquote>
+                  <q
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae consequatur, maxime dignissimos ad saepe amet magnam
+                    numquam illum quaerat ex officia, voluptatum iure assumenda
+                    sunt, laboriosam distinctio corrupti temporibus neque?</q
+                  >
+                </blockquote>
+              </div>
+            </div>
+           <div class="item">
+                <div class="col-md-3 testi-des">
+                  <a href="#url" class="testi-img">
+                    <img src="./assets/images/testi2.jpg" alt="" />
+                  </a>
+                  <h3>Dennis Wilson</h3>
+                  <p>Customer</p>
+                </div>
+                <div
+                  class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left text-center"
+                >
+                  <span class="fa fa-quote-left"></span>
+                  <blockquote>
+                    <q
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vitae consequatur, maxime dignissimos ad saepe amet magnam
+                      numquam illum quaerat ex officia, voluptatum iure assumenda
+                      sunt, laboriosam distinctio corrupti temporibus neque?</q
+                    >
+                  </blockquote>
+                </div>
+            </div>
+           <div class="item">
+              <div class="col-md-3 testi-des">
+                <a href="#url" class="testi-img">
+                  <img src="./assets/images/testi3.jpg" alt="" />
+                </a>
+                <h3>Dennis Wilson</h3>
+                <p>Customer</p>
+              </div>
+              <div
+                class="col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left text-center"
+              >
+                <span class="fa fa-quote-left"></span>
+                <blockquote>
+                  <q
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae consequatur, maxime dignissimos ad saepe amet magnam
+                    numquam illum quaerat ex officia, voluptatum iure assumenda
+                    sunt, laboriosam distinctio corrupti temporibus neque?</q
+                  >
+                </blockquote>
+              </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <!-- place footer here -->
     </footer>
@@ -643,7 +729,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+<!-- slick Testimonials -->
+<script src="./slick-1.8.1/slick/slick.min.js"></script>
+<!-- config -->
+<script>
+  $(document).ready(function () {
+    $(".testimonials-row").slick({
+      infinite: true,
+      slidesToShow: 1,
+      // slidesToScroll: 3,
+      arrows: false,
+      dots: true,
+    });
+  });
+</script>
     <!-- Back to top -->
     <script src="assets/vendors/back-to-top/main.js"></script>
     <script src="assets/vendors/back-to-top/util.js"></script>
