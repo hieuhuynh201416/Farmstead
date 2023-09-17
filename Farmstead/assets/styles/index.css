@@ -1587,3 +1587,24 @@ object-position: center;
   font-size: 15px;
   line-height: 35px;
 }
+
+/* Back to top */
+#movetop {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: #23ac65;
+  border-radius: 4px;
+  padding: 0;
+}
+
+#movetop:hover {
+  opacity: .8;
+}
