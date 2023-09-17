@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Farmstead</title>
+    <title>Farmstead | Your future agriculture</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/img3.png"
+      type="image/x-icon"
+    />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -9,18 +14,54 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Volkhov:wght@400;700&display=swap"
       rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      <!--
+      Bootstrap
+      CSS
+      --
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Slick Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- LightGallery -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lightgallery-bundle.min.css"
+      integrity="sha512-91yJwfiGTCo9TM74ZzlAIAN4Eh5EWHpQJUfvo/XhpH6lzQtiRFkFRW1W+JSg4ch4XW3/xzh+dY4TOw/ILpavQA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -34,15 +75,224 @@
       href="//fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&amp;display=swap"
       rel="stylesheet"
     />
-
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/styles/main.css" />
     <!-- My CSS -->
     <link rel="stylesheet" href="./index.css" />
   </head>
-
-  <body>
-    <header>
-      <!-- place navbar here -->
+  <body id="body">
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <a class="header__logo-link text-capitalize" href="#">
+            <i class="fa-solid fa-leaf"></i> Farmstead
+          </a>
+          <div class="header-menu d-flex align-items-center position-relative">
+            <form
+              id="header-form-group"
+              class="form-group position-relative"
+              action="/"
+              method="GET"
+            >
+              <input id="search" type="search" />
+              <i
+                class="search-icon fa-solid fa-magnifying-glass position-absolute"
+              ></i>
+            </form>
+            <i id="toggle-theme" class="fa-solid fa-moon"></i>
+            <i id="toggle-menu" class="fa-solid fa-bars"></i>
+            <nav id="header-nav" class="position-absolute">
+              <ul
+                class="header-nav-list d-flex flex-column text-center text-uppercase"
+              >
+                <li>
+                  <a class="header-nav-link header-nav-link--active" href="#"
+                    >HOME</a
+                  >
+                </li>
+                <li><a class="header-nav-link" href="#">ABOUT</a></li>
+                <li><a class="header-nav-link" href="#">SERVICES</a></li>
+                <li><a class="header-nav-link" href="#">BLOG POSTS</a></li>
+                <li><a class="header-nav-link" href="#">LANDING PAGE</a></li>
+                <li><a class="header-nav-link" href="#">ELEMENTS PAGE</a></li>
+                <li><a class="header-nav-link" href="#">404 PAGE</a></li>
+                <li><a class="header-nav-link" href="#">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
+
+    <!-- Carousel Section -->
+    <section id="carousel" class="position-relative">
+      <div class="section-headings position-absolute">
+        <h1 class="primary-heading">
+          Welcome to Farmstead<br />
+          where Natural Food is born!
+        </h1>
+        <p class="text-heading">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium.
+        </p>
+        <a href="#" class="btn-custom">LEARN MORE</a>
+      </div>
+      <div class="slider">
+        <div class="slider-item slider-item--1 position-relative">
+          <div class="slider-footer position-absolute text-center">
+            <p class="slider-footer__number"><span>01</span>/03</p>
+            <p class="slider-footer__title text-capitalize">Agriculture</p>
+          </div>
+        </div>
+        <div class="slider-item slider-item--2 position-relative">
+          <div class="slider-footer position-absolute text-center">
+            <p class="slider-footer__number"><span>02</span>/03</p>
+            <p class="slider-footer__title text-capitalize">Farm Field</p>
+          </div>
+        </div>
+        <div class="slider-item slider-item--3 position-relative">
+          <div class="slider-footer position-absolute text-center">
+            <p class="slider-footer__number"><span>03</span>/03</p>
+            <p class="slider-footer__title text-capitalize">Organic Farm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w3l-features py-5" id="work">
+      <div class="container py-md-5 py-4 HomePageFeatures">
+        <div class="row main-cont-wthree-2 align-items-center">
+          <div class="col-lg-6 feature-grid-left pr-lg-5">
+            <h5 class="small-title">Grow Naturally</h5>
+            <h3 class="title-style mb-md-3 mb-2">Leaders in the field</h3>
+            <p class="text-para">
+              Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies
+              nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis
+              eros et, sed commodo risus. Nullam sit amet laoreet elit.
+              Suspendisse non init magnaa velit efficitur, dolor eget ex
+              fermentum.
+            </p>
+            <a href="#" class="btn btn-style mt-lg-5 mt-4">Discover More</a>
+          </div>
+          <div class="col-lg-6 feature-grid-right mt-lg-0 mt-5">
+            <div class="call-grids-w3 d-grid">
+              <div class="grids-1 box-wrap">
+                <div class="icon">
+                  <img
+                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/img4.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h4><a href="about" class="title-head">Natural Products</a></h4>
+              </div>
+
+              <div class="grids-1 box-wrap">
+                <div class="icon">
+                  <img
+                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/img2.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h4>
+                  <a href="about" class="title-head">Wheat Cultivation</a>
+                </h4>
+              </div>
+
+              <div class="grids-1 box-wrap">
+                <div class="icon">
+                  <img
+                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/img1.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h4><a href="about" class="title-head">Modern Truck</a></h4>
+              </div>
+
+              <div class="grids-1 box-wrap">
+                <div class="icon">
+                  <img
+                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/img3.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h4><a href="about" class="title-head">Organic Products</a></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section></section>
+    <div class="service-section py-5">
+      <div class="container"></div>
+    </div>
+    <section>
+      <div class="services">
+        <div class="container">
+          <div class="container__title">
+            <div class="title_1">
+              <h5>What We Do</h5>
+              <h3>
+                Why Choose Our Fresh <br />
+                Organic Foods
+              </h3>
+            </div>
+            <div class="title_2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Magnisuscipit sed voluptate! Quia, atque rerum! Doloremque, minus?
+              Reiciendis, sit ullam.
+            </div>
+          </div>
+          <h4>SERVICES</h4>
+          <div class="containter__pic">
+            <div class="pic">
+              <div class="pic__header">
+                <img src="./farmstead/lua.jpg" alt="" />
+                <p class="label-style">Natural</p>
+              </div>
+              <div class="pic__body">
+                <h3>Agriculture Products</h3>
+                <p>
+                  Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum
+                  ac aliquam. Phasellus justo quam.
+                </p>
+              </div>
+            </div>
+            <div class="pic">
+              <div class="pic__header">
+                <img src="./farmstead/carrot.jpg" alt="" />
+                <p>Agriculture</p>
+              </div>
+              <div class="pic__body">
+                <h3>Fresh Vegettables</h3>
+                <p>
+                  Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum
+                  ac aliquam. Phasellus justo quam.
+                </p>
+              </div>
+            </div>
+            <div class="pic">
+              <div class="pic__header">
+                <img src="./farmstead/cachua.jpg" alt="" />
+                <p>Farm</p>
+              </div>
+              <div class="pic__body">
+                <h3>Organic Products</h3>
+                <p>
+                  Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum
+                  ac aliquam. Phasellus justo quam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="w3l-servicesblock py-5" id="expect">
       <div class="container HomePageFWP py-4 py-md-5">
         <div class="row">
