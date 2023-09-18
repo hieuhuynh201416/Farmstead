@@ -1161,8 +1161,8 @@ h5.small-title {
   font-weight: bold;
   opacity: 0.14;
   font-size: 12vw;
-  margin-top: -220px;
-  margin-left: 205px;
+  margin-top: -190px;
+  margin-left: 210px;
 }
 
 .title_1 {
@@ -1211,7 +1211,7 @@ h5.small-title {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
 }
 .pic__header p {
   position: absolute;
