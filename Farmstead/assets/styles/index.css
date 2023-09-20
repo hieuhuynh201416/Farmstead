@@ -125,7 +125,6 @@ body::-webkit-scrollbar-thumb:hover {
 .back-to-top::before {
   color: #fff;
   font-size: 13px;
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -175,7 +174,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .theme-dark .works-item {
   box-shadow: 2px 5px 100px rgba(0, 0, 0, 0.45);
-
+  color: white;
   transition: box-shadow 0.3s;
 }
 
@@ -183,6 +182,23 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 2px 5px 120px rgba(0, 0, 0, 0.2);
 }
 
+.theme-dark .title-head{
+  color: white !important;
+}
+
+.theme-dark .bg_white{
+  background: #222222 !important;
+}
+
+.theme-dark .title-style {
+  color: white;
+}
+
+.theme-dark .work__bg{
+  background-color: #222222 !important;
+  box-shadow: 0 1rem 3rem var(--shadow-color);
+  
+}
 .theme-dark .services-item__body {
   background-color: var(--bg-dark);
 }
@@ -526,6 +542,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   transition: color 0.5s;
 }
+
 
 .works-item__title > a:hover {
   color: var(--secondary-color);
@@ -1261,10 +1278,14 @@ h5.small-title {
   margin-top: 15px;
 }
 
+
 .grids_info span.fa {
   font-size: 30px;
   color: #fb811e;
   margin-right: 10px;
+  display: block;
+  position: relative;
+  bottom: -10px;
 }
 
 .grids_info p {
