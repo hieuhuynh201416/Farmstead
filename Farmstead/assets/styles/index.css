@@ -148,6 +148,7 @@ body::-webkit-scrollbar-thumb:hover {
 .theme-dark .secondary-heading,
 .theme-dark .works-item__title > a,
 .theme-dark .services-item__title > a,
+.theme-dark .pic__body h3,
 .theme-dark .features-info__title,
 .theme-dark .features-item__title,
 .theme-dark .footer-contact__title,
@@ -183,7 +184,8 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 2px 5px 120px rgba(0, 0, 0, 0.2);
 }
 
-.theme-dark .services-item__body {
+.theme-dark .services-item__body,
+.theme-dark .pic__body {
   background-color: var(--bg-dark);
 }
 
@@ -202,6 +204,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 .theme-dark .footer-info__logo-link:hover {
   color: #fff !important;
+}
+.theme-dark .container_box .feature15-para {
+transition: 0.3s ease-in;
+color: var(--heading-dark-theme);
+}
+.theme-dark .container_box .feature15-para:hover{
+  color: #009f4d;
 }
 
 /*-------------- Tran Duc Thanh --------------*/
@@ -1229,7 +1238,8 @@ h5.small-title {
 }
 .pic__body {
   padding-top: 70px;
-  margin-left: 25px;
+  padding-left: 25px;
+  border-radius: 0 0 12px 12px;
 }
 /* EXPECT */
 .HomePageFWP .row {
@@ -1336,8 +1346,11 @@ h5.small-title {
 }
 
 .w31-index-block4 .feature-unit:hover {
-  border: 1px solid #707070;
+  border: 1px solid #eeeeee;
+  color: #009f4d;
 }
+
+
 
 .col-3 {
   flex: 0 0 25%;
@@ -1347,16 +1360,16 @@ h5.small-title {
   max-width: 100%;
   height: auto;
 }
-.col-9 {
+.w31-index-block4 .col-9 {
   flex: 0 0 75%;
   max-width: 75%;
   color: black;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
-.col-9:hover {
+.w31-index-block4 .col-9:hover {
   color: #009f4d;
 }
-/**
+
   * Products Section
   */
   #products {
