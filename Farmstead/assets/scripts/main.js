@@ -102,3 +102,5 @@ testimonialsCarousel.onmousedown = function () {
 testimonialsCarousel.onmouseup = function () {
   testimonialsCarousel.style.cursor = "default";
 };
+
+
