@@ -37,13 +37,14 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Slick Carousel -->
+    <!-- OWLCAROUSEL -->
+    <link rel="stylesheet" href="./lib/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./lib/owlcarousel/owl.theme.default.min.css" />
+    <!-- SLICK -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link
       rel="stylesheet"
@@ -133,40 +134,42 @@
       </div>
     </header>
 
-    <!-- Carousel Section -->
-    <section id="carousel" class="position-relative">
-      <div class="section-headings position-absolute">
-        <h1 class="primary-heading">
-          Welcome to Farmstead<br />
-          where Natural Food is born!
-        </h1>
-        <p class="text-heading">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium.
-        </p>
-        <a href="#" class="btn-custom">LEARN MORE</a>
-      </div>
-      <div class="slider">
-        <div class="slider-item slider-item--1 position-relative">
-          <div class="slider-footer position-absolute text-center">
-            <p class="slider-footer__number"><span>01</span>/03</p>
-            <p class="slider-footer__title text-capitalize">Agriculture</p>
-          </div>
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="row w-100">
+        <div class="banner__left pt-5 col-md-5 col-sm-12">
+          <h1>Farm</h1>
+          <h2>Welcome to Farmstead where Natural Food is born!</h2>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium.
+          </p>
+          <button class="btn-orange">LEARN MORE</button>
         </div>
-        <div class="slider-item slider-item--2 position-relative">
-          <div class="slider-footer position-absolute text-center">
-            <p class="slider-footer__number"><span>02</span>/03</p>
-            <p class="slider-footer__title text-capitalize">Farm Field</p>
+        <div class="banner__right col-md-7 col-sm-12">
+          <div class="banner-item1">
+            <div class="banner-text">
+              <h5>01/03</h5>
+              <p>Agriculture</p>
+            </div>
           </div>
-        </div>
-        <div class="slider-item slider-item--3 position-relative">
-          <div class="slider-footer position-absolute text-center">
-            <p class="slider-footer__number"><span>03</span>/03</p>
-            <p class="slider-footer__title text-capitalize">Organic Farm</p>
+          <div class="banner-item2">
+            <div class="banner-text">
+              <h5>02/03</h5>
+              <p>Farm Field</p>
+            </div>
+          </div>
+          <div class="banner-item3">
+            <div class="banner-text">
+              <h5>03/03</h5>
+              <p>Organic Farm</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- /BANNER -->
+
     <!-- Section WORK -->
     <section class="w3l-features py-5" id="work">
       <div class="container py-md-5 py-4 HomePageFeatures">
@@ -844,6 +847,55 @@
         });
       });
     </script>
+
+    <!-- OWLCAROUSEL -->
+    <script src="./lib/owlcarousel/jquery.min.js"></script>
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        responsiveClass: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 1,
+            nav: false,
+            loop: false,
+          },
+        },
+      });
+    </script>
+
+    <!-- SLICK -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".banner__right").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          speed: 1000,
+          dots: true,
+          arrows: false,
+        });
+      });
+    </script>
+
     <!-- Back to top -->
     <script src="assets/vendors/back-to-top/main.js"></script>
     <script src="assets/vendors/back-to-top/util.js"></script>
