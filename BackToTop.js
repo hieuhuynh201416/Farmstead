@@ -17,7 +17,7 @@ function scrollToTop() {
     
     if (currentPosition > 0) {
         window.requestAnimationFrame(scrollToTop);
-        window.scrollTo(0, currentPosition - 50); // Điều chỉnh giá trị /8 để làm cho cuộn mượt hơn
+        window.scrollTo(0, currentPosition - 50); 
     }
 }
 
